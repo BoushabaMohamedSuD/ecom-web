@@ -1,6 +1,6 @@
 <div *ngIf="products">
   <div *ngFor="let p of products._embedded.products">
-    <div class="col-md-3">
+    <div class="col-md-6">
       <div class="panel panel-default heigted">
         <div class="panel-heading">{{p.name}}</div>
         <div class="panel-body">
@@ -8,12 +8,12 @@
           <table>
             <tr>
                <td>
-                  <img src=" ">
-
-              </td>
+                  <img src="{{this.catalogueService.host+'/photoProduct/'+p.id}}"/>
+               </td>
               </tr>
           </table>
-          </div>
+
+        </div>
       </div>
     </div>
   </div>

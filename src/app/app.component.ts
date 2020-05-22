@@ -10,7 +10,7 @@ import {CatalogueService} from './catalogue.service';
 export class AppComponent implements OnInit{
   public categories ;
 
-  constructor(private catalogueService:CatalogueService) {
+  constructor(public catalogueService:CatalogueService) {
   }
 
   ngOnInit(): void {

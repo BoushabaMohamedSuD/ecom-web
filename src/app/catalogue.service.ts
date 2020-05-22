@@ -11,7 +11,7 @@ export class CatalogueService {
   constructor(private http:HttpClient) {}
 
   public getResource(url){
-    return this.http.get(this.host+url());
+    return this.http.get(this.host+url);
   }
 
 

@@ -9,7 +9,7 @@ import {CatalogueService} from '../catalogue.service';
 export class ProductsComponent implements OnInit {
   public products;
 
-  constructor(private catalogueService:CatalogueService) { }
+  constructor(public catalogueService:CatalogueService) { }
 
   ngOnInit(): void {
     this.getProducts();
